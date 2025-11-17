@@ -1,0 +1,89 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    color: #222;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 0;
+    font-size: 2.2rem;
+}
+
+.subtitle {
+    margin-top: 5px;
+    color: #666;
+}
+
+section {
+    margin: 30px 0;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: #333;
+    border-left: 4px solid #4c8bf5;
+    padding-left: 10px;
+}
+
+a {
+    color: #4c8bf5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dark {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.dark section h2 {
+    color: #fff;
+    border-left-color: #76a9ff;
+}
+
+.dark a {
+    color: #76a9ff;
+}
+
+#themeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #4c8bf5;
+    color: white;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+#themeToggle:hover {
+    opacity: 0.85;
+}
